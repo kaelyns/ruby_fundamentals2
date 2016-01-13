@@ -23,13 +23,14 @@ dispcohort(students,1)
 puts "Increase cohort sizes by 5% :"
 dispcohort(students,1.05)
 
+total = 0
+students.each do |k,v|
+    total += v
+end
+
 puts "Delete 2nd cohort: "
 students.delete(:cohort2)
 dispcohort(students,1.05)
 
 puts "Total number of students across all cohorts: "
-total = 0
-students.each do |k,v|
-    total += v
-end
 puts total
