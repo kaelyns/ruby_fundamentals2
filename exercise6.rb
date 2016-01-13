@@ -3,7 +3,7 @@
 grocery_list = ["carrots", "toilet paper", "apples", "salmon"]
 
 def finallist(grocery_list)
-    bananas = 0
+    bananas = 0 # initialise bananas
 
     grocery_list.each do |item|
         puts "* #{item}"
@@ -21,8 +21,8 @@ def finallist(grocery_list)
         puts "You need to pick up bananas."
     end
 
+    puts "second item in the grocery list is #{grocery_list[1]}"
 
-    # for grocery_list.
 end
 
 grocery_list << "rice"
