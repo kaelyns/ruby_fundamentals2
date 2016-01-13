@@ -6,6 +6,8 @@ def finallist(grocery_list)
     grocery_list.each do |item|
         puts "* #{item}"
     end
+
+    puts "Total number of items: #{grocery_list.count}"
 end
 
 grocery_list << "rice"
