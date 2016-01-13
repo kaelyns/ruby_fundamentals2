@@ -38,4 +38,5 @@ finallist(grocery_list.sort)
 
 puts "Grocery list without salmon"
 grocery_list.delete("salmon")
+
 finallist(grocery_list)
