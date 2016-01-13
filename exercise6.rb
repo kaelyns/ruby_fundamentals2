@@ -12,18 +12,30 @@ def finallist(grocery_list)
         end
     end
 
-    total = grocery_list.count
-    puts "Total number of items: #{total}"
-
     if bananas == 1
         puts "You dont need to pick up bananas today."
     else
         puts "You need to pick up bananas."
     end
 
-    puts "second item in the grocery list is #{grocery_list[1]}"
+    total = grocery_list.count
+    puts "Total number of items: #{total}"
+
+    puts "Second item in the grocery list: #{grocery_list[1]} \n "
+
+
+    return grocery_list
 
 end
 
 grocery_list << "rice"
+
+puts "Grocery list: "
+finallist(grocery_list)
+
+puts "Grocery list in alphabetical order: "
+finallist(grocery_list.sort)
+
+puts "Grocery list without salmon"
+grocery_list.delete("salmon")
 finallist(grocery_list)
